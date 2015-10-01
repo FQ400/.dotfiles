@@ -1,0 +1,33 @@
+[user]
+  name = Carsten Lamm
+  email = "CarstenLamm@googlemail.com"
+
+[alias]
+  st = status -sb
+  ci = commit
+  co = checkout
+  l = log --oneline --graph --decorate
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%nAuthor: %an <%ae>%n' --abbrev-commit --date=relative
+  m = checkout master
+  b = branch
+  f = fetch -p
+  clean-local-branches= "!git branch --merged master | grep -v '^* ' | grep -v ' master$' | xargs git branch -d"
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[core]
+    editor = mate -w
+    excludesfile = ~/.gitignore
+
+[branch]
+  autosetuprebase = always
+
+[push]
+  default = nothing
+
+[commit]
+  template = ~/.gitmsg
