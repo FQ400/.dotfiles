@@ -1,0 +1,12 @@
+# Display
+softTabs         = true
+windowTitle      = "$TM_DIRECTORY/$TM_DISPLAYNAME"
+
+[ source.ruby ]
+tabSize          = 2
+
+[ source.python ]
+tabSize          = 4
+
+exclude = "{$exclude,tmp/cache,log}"
+excludeInFolderSearch = "{$excludeInFolderSearch,tmp/cache,log/*.log,coverage/**/*}"
