@@ -30,4 +30,4 @@
   default = nothing
 
 [commit]
-  template = ~/.gitmsg
+  template = ~/.git_commit_tpl
