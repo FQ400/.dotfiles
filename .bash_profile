@@ -12,14 +12,15 @@ __git_ps1 ()
 
 source ~/.git-completion.bash
 
-# TextMate as default Editor
-export EDITOR='/usr/local/bin/mate'
+# ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh ~/bin/atom
+export PATH="/Users/clamm/bin:$PATH"
 
-# load homebrew into path
 export PATH="/Users/clamm/.homebrew/bin:/Users/clamm/.homebrew/sbin:$PATH"
-
-# load local npm modules
 export PATH="$PATH:/Users/clamm/node_modules/.bin"
+
+# TextMate as default Editor
+export EDITOR='atom'
+
 
 # used by go language
 export GOPATH="/Users/clamm/workspace/Go"
