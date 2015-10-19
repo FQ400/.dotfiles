@@ -18,8 +18,7 @@ export PATH="/Users/clamm/bin:$PATH"
 export PATH="/Users/clamm/.homebrew/bin:/Users/clamm/.homebrew/sbin:$PATH"
 export PATH="$PATH:/Users/clamm/node_modules/.bin"
 
-# TextMate as default Editor
-export EDITOR='atom'
+export EDITOR='atom -w'
 
 
 # used by go language
