@@ -38,6 +38,9 @@ alias iris="cd ~/workspace/dr-iris-lamm-git/_PREPROCESS"
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
 
+alias dms="docker-machine start default"
+alias dme="docker-machine env default"
+
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
