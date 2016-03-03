@@ -4,7 +4,7 @@
 
 [alias]
   st = status -sb
-  ci = commit
+  ci = commit -v
   co = checkout
   l = log --oneline --graph --decorate
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%nAuthor: %an <%ae>%n' --abbrev-commit --date=relative
