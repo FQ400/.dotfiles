@@ -164,3 +164,4 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
+if [ -e /Users/clamm/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/clamm/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
