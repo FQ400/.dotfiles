@@ -20,11 +20,6 @@ export PATH="$PATH:/Users/clamm/node_modules/.bin"
 
 export EDITOR='atom -w'
 
-
-# used by go language
-export GOPATH="/Users/clamm/workspace/Go"
-export PATH="$PATH:$GOPATH/bin"
-
 # export PATH="$PATH:/usr/bin/ant"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -37,9 +32,6 @@ alias iris="cd ~/workspace/dr-iris-lamm-git/_PREPROCESS"
 
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
-
-alias dms="docker-machine start default"
-alias dme="docker-machine env default"
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
@@ -165,3 +157,5 @@ else \
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
 if [ -e /Users/clamm/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/clamm/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+[[ -s "/Users/clamm/.gvm/scripts/gvm" ]] && source "/Users/clamm/.gvm/scripts/gvm"
