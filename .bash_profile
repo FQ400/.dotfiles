@@ -159,3 +159,13 @@ fi)'
 if [ -e /Users/clamm/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/clamm/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 [[ -s "/Users/clamm/.gvm/scripts/gvm" ]] && source "/Users/clamm/.gvm/scripts/gvm"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/clamm/opt/google-cloud-sdk/path.bash.inc ]; then
+  source '/Users/clamm/opt/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/clamm/opt/google-cloud-sdk/completion.bash.inc ]; then
+  source '/Users/clamm/opt/google-cloud-sdk/completion.bash.inc'
+fi
