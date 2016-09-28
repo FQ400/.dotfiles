@@ -33,6 +33,8 @@ alias iris="cd ~/workspace/dr-iris-lamm-git/_PREPROCESS"
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
 
+alias chrome-repaint-recs="open '/applications/Google Chrome.app' --args --show-paint-rects"
+
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
