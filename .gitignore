@@ -3,6 +3,7 @@
 *.log
 *.sql
 *.sqlite
+npm-debug.log.*
 
 # OS generated files #
 ######################
