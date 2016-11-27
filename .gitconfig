@@ -7,7 +7,7 @@
   ci = commit -v
   co = checkout
   l = log --oneline --graph --decorate
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset %C(red)%d%Creset %s %n └A: %C(blue)(%ar) %C(bold blue)%an <%ae>%Creset %n └C: %C(green)(%cr) %C(bold green)%cn <%ce>%Creset' --abbrev-commit --date=relative
   m = checkout master
   b = branch
   f = fetch -p
