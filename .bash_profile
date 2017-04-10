@@ -10,25 +10,26 @@ __git_ps1 ()
     fi
 }
 
-source ~/.git-completion.bash
+source $HOME/.git-completion.bash
 
-# ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh ~/bin/atom
-export PATH="/Users/clamm/bin:$PATH"
+# ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh $HOME/bin/atom
+export PATH="$HOME/bin:$PATH"
 
-export PATH="/Users/clamm/.homebrew/bin:/Users/clamm/.homebrew/sbin:$PATH"
-export PATH="$PATH:/Users/clamm/node_modules/.bin"
+export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
+export PATH="$PATH:/node_modules/.bin"
+export PATH="$PATH:$HOME/opt/protoc-3.2.0-osx-x86_64/bin"
 
 export EDITOR='atom -w'
 
 # export PATH="$PATH:/usr/bin/ant"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-alias pg_start="pg_ctl -D /Users/clamm/.homebrew/var/postgres -l /Users/clamm/.homebrew/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /Users/clamm/.homebrew/var/postgres -l /Users/clamm/.homebrew/var/postgres/server.log stop"
-alias cassandra_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
+alias pg_start="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log stop"
+alias cassandra_start="launchctl load $HOME/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
 alias m="mate"
-alias textmatebundles="cd /Users/clamm/Library/Application Support/TextMate/Managed/Bundles"
-alias iris="cd ~/workspace/dr-iris-lamm-git/_PREPROCESS"
+alias textmatebundles="cd $HOME/Library/Application Support/TextMate/Managed/Bundles"
+alias iris="cd $HOME/workspace/dr-iris-lamm-git/_PREPROCESS"
 
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
@@ -45,7 +46,7 @@ shopt -s checkwinsize
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export NVM_DIR=~/.nvm
+export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 
@@ -159,14 +160,14 @@ else \
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
 
-[[ -s "/Users/clamm/.gvm/scripts/gvm" ]] && source "/Users/clamm/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/clamm/opt/google-cloud-sdk/path.bash.inc ]; then
-  source '/Users/clamm/opt/google-cloud-sdk/path.bash.inc'
+if [ -f $HOME/opt/google-cloud-sdk/path.bash.inc ]; then
+  source "$HOME/opt/google-cloud-sdk/path.bash.inc"
 fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/clamm/opt/google-cloud-sdk/completion.bash.inc ]; then
-  source '/Users/clamm/opt/google-cloud-sdk/completion.bash.inc'
+if [ -f $HOME/opt/google-cloud-sdk/completion.bash.inc ]; then
+  source "$HOME/opt/google-cloud-sdk/completion.bash.inc"
 fi
