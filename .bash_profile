@@ -24,6 +24,11 @@ export EDITOR='atom -w'
 # export PATH="$PATH:/usr/bin/ant"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+export GOROOT=$HOME/.homebrew/opt/go/libexec
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/workspace/go
+export PATH=$PATH:$GOPATH/bin
+
 alias pg_start="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log stop"
 alias cassandra_start="launchctl load $HOME/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
