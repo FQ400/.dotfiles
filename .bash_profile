@@ -31,15 +31,12 @@ export PATH=$PATH:$GOPATH/bin
 
 alias pg_start="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log stop"
-alias cassandra_start="launchctl load $HOME/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
 alias m="mate"
 alias textmatebundles="cd $HOME/Library/Application Support/TextMate/Managed/Bundles"
 alias iris="cd $HOME/workspace/dr-iris-lamm-git/_PREPROCESS"
-
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
-
-alias chrome-repaint-recs="open '/applications/Google Chrome.app' --args --show-paint-rects"
+alias k="kubectl"
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
