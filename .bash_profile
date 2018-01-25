@@ -18,6 +18,7 @@ export GOROOT=$HOME/.homebrew/opt/go/libexec
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
+export GO15VENDOREXPERIMENT="1"
 
 alias pg_start="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log stop"
