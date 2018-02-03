@@ -20,14 +20,15 @@ export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
 export GO15VENDOREXPERIMENT="1"
 
+
+alias kxgo="cd $GOPATH/src/github.com/kontextr"
 alias pg_start="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D $HOME/.homebrew/var/postgres -l $HOME/.homebrew/var/postgres/server.log stop"
-alias m="mate"
 alias textmatebundles="cd $HOME/Library/Application Support/TextMate/Managed/Bundles"
-alias iris="cd $HOME/workspace/dr-iris-lamm-git/_PREPROCESS"
 alias ssh_shk="ssh -o StrictHostKeychecking=no"
 alias diablo="open '/Applications/Diablo III/Diablo III.app' --args -launch "
 alias k="kubectl"
+
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
