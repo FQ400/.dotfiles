@@ -25,7 +25,6 @@
   status = auto
 
 [core]
-    editor = mate -w
     excludesfile = ~/.gitignore
 
 [branch]
