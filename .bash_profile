@@ -7,6 +7,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
 export PATH="$PATH:/node_modules/.bin"
 export PATH="$PATH:$HOME/opt/protoc-3.5.1-osx-x86_64/bin"
+export PATH="$HOME/.pyenv/versions/3.6.4/bin:$PATH"
 
 export EDITOR='vim'
 
@@ -40,8 +41,7 @@ source $(brew --prefix nvm)/nvm.sh
 [[ -f "$HOME/.git-completion.bash" ]] && source $HOME/.git-completion.bash
 [[ -f "$HOME/.git-prompt.bash" ]] && source $HOME/.git-prompt.bash
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/clamm/opt/google-cloud-sdk/path.bash.inc' ]; then source '/Users/clamm/opt/google-cloud-sdk/path.bash.inc'; fi
+if [ -f "$HOME/opt/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/opt/google-cloud-sdk/path.bash.inc"; fi
+if [ -f "$HOME/opt/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/opt/google-cloud-sdk/completion.bash.inc"; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/clamm/opt/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/clamm/opt/google-cloud-sdk/completion.bash.inc'; fi
+[[ -f "$HOME/.homebrew/opt/autoenv/activate.sh" ]] && source $HOME/.homebrew/opt/autoenv/activate.sh
