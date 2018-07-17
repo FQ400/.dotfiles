@@ -35,3 +35,6 @@
 
 [commit]
   template = ~/.git_commit_tpl
+
+[rebase]
+  autostash = true
