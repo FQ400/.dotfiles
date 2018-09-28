@@ -9,7 +9,7 @@ export PATH="$PATH:/node_modules/.bin"
 export PATH="$PATH:$HOME/opt/protoc-3.5.1-osx-x86_64/bin"
 export PATH="$HOME/.pyenv/versions/3.6.4/bin:$PATH"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
