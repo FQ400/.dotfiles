@@ -12,10 +12,8 @@
   m = checkout master
   b = branch
   f = fetch -p
-  p = push
-  pf = push --force-with-lease
-  wd = diff --word-diff
   ria = rebase -i --autosquash
+  pom = pull --rebase origin master
   clean-local-branches= "!git branch --merged master | grep -v '^* ' | grep -v ' master$' | xargs git branch -d"
 
 [color]
