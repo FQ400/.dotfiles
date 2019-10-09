@@ -71,6 +71,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# tell less not to paginate if less than a page
+export LESS="-F -X $LESS"
+
 source $HOME/.shell_exports
 source $HOME/.shell_aliases
 
