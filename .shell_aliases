@@ -1,0 +1,5 @@
+alias kxgo="cd $GOPATH/src/github.com/kontextr"
+alias kx="cd $HOME/workspace/kx"
+alias k="kubectl"
+
+alias clr='printf "\033c"'
