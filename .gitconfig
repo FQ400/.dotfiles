@@ -1,6 +1,6 @@
 [user]
   name = Carsten Lamm
-  email = "CarstenLamm@googlemail.com"
+  email = "fq-git@protonmail.com"
 
 [alias]
   st = status -sb
@@ -36,3 +36,6 @@
 
 [rebase]
   autostash = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
