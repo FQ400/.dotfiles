@@ -5,6 +5,7 @@
 [alias]
   st = status -sb
   ci = commit -v
+  cinv = commit -v --no-verify
   fix = commit --fixup
   co = checkout
   l = log --oneline --graph --decorate
