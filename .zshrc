@@ -77,6 +77,8 @@ export LESS="-F -X $LESS"
 source $HOME/.shell_exports
 source $HOME/.shell_aliases
 
+source $HOME/.shell_spotlight
+
 # export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 

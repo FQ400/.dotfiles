@@ -3,3 +3,5 @@ alias kx="cd $HOME/workspace/kx"
 alias k="kubectl"
 
 alias clr='printf "\033c"'
+
+alias sp="cd $HOME/workspace/customers/spotlight"
