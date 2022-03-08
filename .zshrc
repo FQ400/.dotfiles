@@ -87,4 +87,3 @@ export CLOUDSDK_PYTHON="$HOME/.pyenv/versions/3.7.8/bin/python"
 if [ -f "$HOME/opt/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/opt/google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "$HOME/opt/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/opt/google-cloud-sdk/completion.zsh.inc"; fi
 
-
