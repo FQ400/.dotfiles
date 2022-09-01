@@ -1,5 +1,6 @@
+alias dashboard="cd $GOPATH/src/github.com/FQ400/personal-dashboard && ./personal-dashboard"
 alias kxgo="cd $GOPATH/src/github.com/kontextr"
-alias kx="cd $HOME/workspace/kx"
+alias kx="cd $HOME/workspace/customers/funke"
 alias k="kubectl"
 
 alias clr='printf "\033c"'
