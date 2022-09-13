@@ -11,7 +11,7 @@
   l = log --oneline --graph --decorate
   ll = log --oneline --graph --decorate -20
   lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset %C(red)%d%Creset %s %n └A: %C(blue)(%ar) %C(bold blue)%an <%ae>%Creset %n └C: %C(green)(%cr) %C(bold green)%cn <%ce>%Creset' --abbrev-commit --date=relative
-  m = checkout master
+  m = checkout main
   b = branch
   f = fetch -p
   ria = rebase -i --autosquash
